@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentID System</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" href="student.css">
+</head>
+<body>
+    <div id="container">
+    <section id="list-container">
+        <h2>All students</h2>
+        <div class="btndiv">
+            <button id="listall">List all student</button>
+        </div>
+        <ul id="list">
+        </ul>
+    </section>
+    <section id="search-container">
+        <h2>Search</h2>
+        <div class="labelinput-group">
+            <label for="search">StudentID:</label>
+            <input type="text" id="search">
+        </div>
+        <div class="btndiv">
+        <button id = "searchBtn">Search specific</button>
+        </div>
+        <div id="studentFind">
+        </div>
+    </section>
+    <section id = "addNew-container">
+        <h2>Add new</h2>
+        <div class="labelinput-group">
+            <label for="newid">studentID:</label>
+            <input type="text" id="newid">
+        </div>
+        <div class="labelinput-group">
+            <label for="newname">student name:</label>
+            <input type="text" id="newname">
+        </div>
+        <div class="btndiv">
+            <button id="newBtn">Add</button>
+        </div>
+    </section>
+    <section id = "delete-container">
+        <h2>Delete</h2>
+        <div class="labelinput-group">
+            <label for="deleteId">studentID:</label>
+            <input type="text" id="deleteId">
+        </div>
+        <button id="deleteBtn">Delete specific</button>
+    </section>
+    </div>
+<script src="./student.js"></script>
+</body>
+</html>
